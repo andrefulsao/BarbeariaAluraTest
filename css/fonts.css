@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+@font-face {
+    font-family: 'greenpoppyitalic';
+    src: url('./components/fonts/Green-Poppy-Italic.woff2') format('woff2'),
+         url('../components/fonts/Green-Poppy-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'greenpoppy';
+    src: url('./components/fonts/Green-Poppy.woff2') format('woff2'),
+         url('../components/fonts/Green-Poppy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amzleft';
+    src: url('./components/fonts/AmazDooMLeft.ttf') format('ttf'),
+         url('../components/fonts/AmazDooMLeft2') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
