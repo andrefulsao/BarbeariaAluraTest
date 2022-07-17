@@ -190,3 +190,80 @@ footer {
 .btns button:hover:before {
     width: 100%;
  }
+
+ /*Responsivo*/
+
+ @media screen and (max-width:600px){
+    .menu-content {
+        font-size: 1rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+    }
+
+    .menu-content .list-itens {
+        gap: 1px;
+    }
+
+    .menu-content .list-itens a {
+        text-decoration: none;
+        color:white;
+        padding: 0.5rem;
+        transform: 2ms ease-in;
+        position: relative;
+    }
+
+    .main-content h2 {
+        width: 450px;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .main-content p {
+        margin-bottom: 0.5rem;
+        font-size: 1.0rem;
+        color:rgb(165, 165, 165);
+        width: 450px;
+    }
+    
+    .menu-bene {
+        text-transform: uppercase;
+        padding: 1em;
+    }
+    
+    .menu-bene h3 {
+        text-align: center;
+        padding:0.5em;
+        font-size:1em;
+    }
+    
+    .menu-bene ul {
+        list-style: none;
+        text-align: center;
+        font-size:1em;
+    }
+
+    .beneficios img{
+        width:150px;
+        height:150px;
+    }
+
+    .btns {
+        margin-top: 1em;
+        gap: 10px;
+    }
+    
+    .btns button {
+        width:150px;
+        height: 30px;
+    }
+
+    .btns button:before {
+        content: '';
+        height: 30px;
+     }
+    
+ }
