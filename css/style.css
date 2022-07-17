@@ -196,53 +196,40 @@ footer {
  @media screen and (max-width:600px){
     .menu-content {
         font-size: 1rem;
+        margin-top: 1rem;
     }
 
     .logo {
-        font-size: 1rem;
-        letter-spacing: 0.2rem;
-        cursor: pointer;
-    }
-
-    .menu-content .list-itens {
-        gap: 1px;
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
     }
 
     .menu-content .list-itens a {
-        text-decoration: none;
-        color:white;
-        padding: 0.5rem;
-        transform: 2ms ease-in;
-        position: relative;
+        padding: 1rem;
     }
 
     .main-content h2 {
+        margin-top: 4rem;
         width: 450px;
         font-size: 2rem;
-        margin-bottom: 1rem;
     }
     
     .main-content p {
-        margin-bottom: 0.5rem;
-        font-size: 1.0rem;
-        color:rgb(165, 165, 165);
-        width: 450px;
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        width: 380px;
     }
     
     .menu-bene {
-        text-transform: uppercase;
-        padding: 1em;
+        padding: 2em;
     }
     
     .menu-bene h3 {
-        text-align: center;
-        padding:0.5em;
-        font-size:1em;
+        padding:1.5em;
+        font-size:2em;
     }
     
     .menu-bene ul {
-        list-style: none;
-        text-align: center;
         font-size:1em;
     }
 
@@ -252,18 +239,18 @@ footer {
     }
 
     .btns {
-        margin-top: 1em;
-        gap: 10px;
+        margin-top: 1.5em;
+        gap: 20px;
     }
     
     .btns button {
-        width:150px;
-        height: 30px;
+        width:180px;
+        height: 60px;
     }
 
     .btns button:before {
         content: '';
-        height: 30px;
+        height: 60px;
      }
     
  }
