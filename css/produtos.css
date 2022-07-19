@@ -28,7 +28,7 @@ body{
 
 header {
     padding: 5px 0;
-    height: 7vw;
+    height: 7vh;
     background: rgba(22,22,22,0.2);   
 }
 
@@ -79,13 +79,13 @@ header {
 /* Centro - Conteudo Principal */
 
 main {
-    height: 60vh;
+    height: 70vh;
+    padding-top: 20px;
 }
 
 .produtos {
     width: 940px;
     margin: 0 auto;
-    padding: 50px 0;
 }
 .produtos li {
     display: inline-block;
@@ -154,11 +154,10 @@ main {
 footer {
     text-align: center;
     box-sizing: border-box;
-    height: 20vh;
+    height: 23vh;
 }
 
 .img-footer {
-    margin-top:30px;
     height:100px;
 }
 
@@ -169,7 +168,6 @@ footer {
     font-weight: bold;
     margin-top: 5px;
 }
-
 
 @media screen and (max-width:600px){
     body{
@@ -186,7 +184,7 @@ footer {
     }
     .menu-content {
         font-size: 1rem;
-        margin: 1rem;
+        margin: 0.5rem;
     }
 
     .logo {

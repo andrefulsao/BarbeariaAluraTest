@@ -124,12 +124,14 @@ footer {
     justify-content: space-around;
     justify-content:center;
     align-items: center;
+    gap:20px;
 }
 
 
 .menu-bene {
     text-transform: uppercase;
-    padding: 2em;
+    padding: 0;
+    margin-right: 80px;
 }
 
 .menu-bene h3 {
@@ -193,10 +195,42 @@ footer {
 
  /*Responsivo*/
 
+
+ @media screen and (max-width:1366px){
+    
+    header{
+        height: 7vh;
+    }
+
+    main{
+        height:40vh;
+    }
+
+    Footer{
+        height: 53vh;
+    }
+
+    .btns {
+        margin-top: 1em;
+    }
+    
+    
+ }
+
+
  @media screen and (max-width:600px){
+    
+    header {
+        height: 7vh;
+    }
+
+    main{
+       height:43vh;
+    }
+
     .menu-content {
         font-size: 1rem;
-        margin-top: 1rem;
+        margin: 0.5rem;
     }
 
     .logo {
@@ -220,8 +254,17 @@ footer {
         width: 380px;
     }
     
+    footer {
+        height: 49vh;
+    }
+
+    .beneficios {
+        gap: 10px;
+    }
+
     .menu-bene {
-        padding: 2em;
+        padding: 0;
+        margin-right: 30px;
     }
     
     .menu-bene h3 {
@@ -234,8 +277,8 @@ footer {
     }
 
     .beneficios img{
-        width:150px;
-        height:150px;
+        width:160px;
+        height:180px;
     }
 
     .btns {
