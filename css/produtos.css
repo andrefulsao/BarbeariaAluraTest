@@ -1,45 +1,85 @@
-header {
-    background: url("../img/bg.jpg");
-    padding: 20px 0;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/*Zerando CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-}
+/*Fundo da tela*/
 
-.caixa img{
-    height:190px;
-}
-
-nav {
-    position:absolute;
-    top: 90px;
-    right: 0;
-}
-
-nav li{
-    display: inline;
-    margin-left: 15px;
-
-}
-
-nav a {
-    text-transform: uppercase;
+html{
+    height:100vh;
+    font-family: 'Lato', sans-serif;
+    font-size:62.5%;
     color: white;
-    font-weight: bold;
-    font-size:22px;
-    text-decoration: none;
 }
 
-nav a:hover {
-    color: #C78C19;
-    text-decoration: underline;
+body{
+    background:url(../img/produt-barber.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
 }
+
+/* Menu - Header - NavBar */
+
+header {
+    padding: 5px 0;
+    height: 7vw;
+    background: rgba(22,22,22,0.2);   
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color:white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:0px;
+    height: 1px;
+    background-color: rgb(251, 255, 0);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width:100%;
+}
+
+/* Centro - Conteudo Principal */
 
 main {
-    background-color: #E7DFDD;
+    height: 60vh;
 }
 
 .produtos {
@@ -56,7 +96,7 @@ main {
     margin:0 1.5%;
     padding: 30px 10px; 
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius:10px;
 
 }
@@ -67,7 +107,7 @@ main {
 }
 
 .produtos li:hover h2{
-    font-size: 34px;
+    font-size: 25px;
     color: #C78C19;
 }
 
@@ -81,7 +121,7 @@ main {
 }
 
 .produtos li:active h2{
-    font-size: 34px;
+    font-size: 25px;
     color: #088C19;
 }
 
@@ -91,7 +131,7 @@ main {
 }
 
 .produtos h2 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -104,19 +144,21 @@ main {
 }
 
 .produto-preco{
-    font-size:22px;
+    font-size:20px;
     font-weight: bold;
     margin-top: 10px;
 }
 
+/* Footer */
+
 footer {
     text-align: center;
-    background: url("../img/bg.jpg");
     box-sizing: border-box;
-    padding:10px 0;
+    height: 20vh;
 }
 
-footer img {
+.img-footer {
+    margin-top:30px;
     height:100px;
 }
 
@@ -127,3 +169,71 @@ footer img {
     font-weight: bold;
     margin-top: 5px;
 }
+
+
+@media screen and (max-width:600px){
+
+    html{
+        height:100%;
+    }
+
+    body{
+        background:url(../img/produt-barber.jpg);
+        background-image: center;
+        width:600px;
+    }
+    
+    header{
+        height: 7%;
+    }
+
+    main{
+        height:50%;
+    }
+    .menu-content {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .menu-content .list-itens a {
+        padding: 1rem;
+    }
+
+    .produtos {
+        width: 340px;
+        margin: 0 auto;
+        padding:5px;
+    }
+    .produtos li {
+        display: block;
+        width:100%;
+        height: 400px;
+        margin:2% 0;
+    
+    }
+
+    footer {
+        height:10%;
+        width:100%;
+        bottom: 0;
+    }
+    
+    .img-footer {
+        margin-top:3px;
+        height:100px;
+    }
+    
+    .copyright {
+        color: #FFFFFF;
+        font-style: italic;
+        font-size: 13px;
+        font-weight: bold;
+        
+    }
+    
+ }

@@ -81,7 +81,7 @@ header {
 /* Centro - Conteudo Principal */
 
 main {
-    height: 63 vh;
+    height: 40vh;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -116,7 +116,7 @@ main {
 /* Footer */
 
 footer {
-    height: 30vh;
+    height: 40vh;
 }
 
 .beneficios {
